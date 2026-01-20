@@ -175,7 +175,7 @@
             margin: 0 auto;
             width: 100%;
             display: grid;
-            padding: 20px 0px 0px 20px;
+            padding: 20px 20px 0px 20px;
             grid-template-columns: 1fr 1fr;
             gap: 80px;
             align-items: center;
@@ -793,7 +793,7 @@
         }
 
 
-        @media (max-width: 768px) {
+        @media (max-width: 780px) {
             .nav-links {
                 position: absolute;
                 top: 80px;
@@ -822,10 +822,10 @@
 
             .semi-circle-bg {
                 position: absolute;
-                       /* width: 565px; */
-        /* height: 565px; */
-        top: 119%;
-        left: 50%;
+                /* width: 565px; */
+                /* height: 565px; */
+                top: 119%;
+                left: 50%;
                 background: linear-gradient(135deg, #d4af3773 0%, #F5DEB3 100%);
                 border-radius: 50%;
                 box-shadow: 0 20px 80px rgba(0, 0, 0, 0.3);
@@ -834,14 +834,12 @@
             }
 
             .main-logo {
-                width: 32vw;
-                max-width: 213px;
-                min-width: 120px;
+                width: 86vw;
                 aspect-ratio: 1 / 1;
                 height: auto;
                 position: absolute;
-                left: 45%;
-                top: 35%;
+                left: 49%;
+                top:55%;
                 transform: translate(-50%, -50%);
             }
 
@@ -927,9 +925,17 @@
 
             <div class="logo-showcase">
                 <div class="main-logo">
-                    <img src="assets\homepage.png" alt="Quotopia">
+                    <picture>
+                        <!-- Mobile image (780px and below) -->
+                        <source srcset="Screens\Frame-22.png" media="(max-width: 780px)" />
+
+                        <!-- Default image (above 780px) -->
+                        <img src="assets/homepage.png" alt="Quotopia" />
+                    </picture>
                 </div>
+
             </div>
+
     </section>
     </div>
     </section>
@@ -987,7 +993,7 @@
                         </div>
 
                         <div class="screen-slide slide6" data-feature="5">
-                            <img src="Screens\quote.png" alt="Notifications">
+                            <img src="Screens\notification.png" alt="Notifications">
                         </div>
                     </div>
                 </div>
@@ -1023,11 +1029,14 @@
 
                 <li class="feature-item" data-index="5">
                     <div class="feature-header">
-                        <div class="feature-title">Smart Notifications</div>
+                        <div class="feature-title">Social Notifications</div>
                     </div>
-                    <div class="feature-description">Daily motivational quotes, interaction alerts, and customizable
-                        notification preferences.</div>
+                    <div class="feature-description">
+                        Get notified when someone likes your post, mentions you, or comments on your content—so you
+                        never miss an interaction.
+                    </div>
                 </li>
+
             </ul>
         </div>
     </section>
