@@ -440,35 +440,37 @@
             gap: 60px;
             align-items: center;
         }
-.screen-pagination {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 30px;
-    position: absolute;
-    bottom:-4%;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
-.dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #7d7d7d;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
+        .screen-pagination {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 30px;
+            position: absolute;
+            bottom: -4%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
-.dot.active {
-    background: #341100;
-    transform: scale(1.2);
-}
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #7d7d7d;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
-.dot:hover {
-    background: #CFAB71;
-    transform: scale(1.1);
-}
+        .dot.active {
+            background: #341100;
+            transform: scale(1.2);
+        }
+
+        .dot:hover {
+            background: #CFAB71;
+            transform: scale(1.1);
+        }
+
         .phone-display {
             position: relative;
             height: 650px;
@@ -751,34 +753,35 @@
                 width: 100%;
                 height: 300px;
             }
-.semi-circle-bg {
-    width: 700px;
-    background: linear-gradient(135deg, #D4AF37 0%, #F5DEB3 100%);
-    border-radius: 500px 0 0 500px;
-    position: absolute;
-    left: 60%;
-    top: 36%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.3);
-    animation: float 4s ease-in-out infinite;
-}
+
+            .semi-circle-bg {
+                width: 700px;
+                background: linear-gradient(135deg, #D4AF37 0%, #F5DEB3 100%);
+                border-radius: 500px 0 0 500px;
+                position: absolute;
+                left: 60%;
+                top: 36%;
+                transform: translate(-50%, -50%);
+                box-shadow: 0 20px 80px rgba(0, 0, 0, 0.3);
+                animation: float 4s ease-in-out infinite;
+            }
 
             .main-logo {
-        position: absolute;
-        top: 20%;
-        left: 81%;
-        transform: translate(-50%, -50%);
-        width: 254px;
-        height: 280px;
-        background: transparent;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        animation: pulse 3s ease-in-out infinite;
-        z-index: 1;
-        padding: 20px;
-    }
+                position: absolute;
+                top: 20%;
+                left: 81%;
+                transform: translate(-50%, -50%);
+                width: 254px;
+                height: 280px;
+                background: transparent;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                animation: pulse 3s ease-in-out infinite;
+                z-index: 1;
+                padding: 20px;
+            }
 
             .hero h1 {
                 font-size: 3em;
@@ -816,43 +819,48 @@
             .nav-download-btn {
                 display: none;
             }
-    .semi-circle-bg {
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        top: 74%;
+
+            .semi-circle-bg {
+                position: absolute;
+                       /* width: 565px; */
+        /* height: 565px; */
+        top: 119%;
         left: 50%;
-        background: linear-gradient(135deg, #D4AF37 0%, #F5DEB3 100%);
-        border-radius: 50%;
-        box-shadow: 0 20px 80px rgba(0, 0, 0, 0.3);
-        animation: floatY 4s ease-in-out infinite;
-        z-index: 0;
-    }
-    .main-logo {
-        width: 36vw;
-        max-width: 213px;
-        min-width: 120px;
-        aspect-ratio: 1 / 1;
-        height: auto;
-        position: absolute;
-        left: 45%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-       .phone-frame {
-        width: 257px;
-        height: 529px;
-        background: #341100;
-        border-radius: 45px;
-        padding: 9px;
-        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
-    }
-.phone-display {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+                background: linear-gradient(135deg, #d4af3773 0%, #F5DEB3 100%);
+                border-radius: 50%;
+                box-shadow: 0 20px 80px rgba(0, 0, 0, 0.3);
+                animation: floatY 4s ease-in-out infinite;
+                z-index: 0;
+            }
+
+            .main-logo {
+                width: 32vw;
+                max-width: 213px;
+                min-width: 120px;
+                aspect-ratio: 1 / 1;
+                height: auto;
+                position: absolute;
+                left: 45%;
+                top: 35%;
+                transform: translate(-50%, -50%);
+            }
+
+            .phone-frame {
+                width: 257px;
+                height: 529px;
+                background: #341100;
+                border-radius: 45px;
+                padding: 9px;
+                box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+            }
+
+            .phone-display {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
             .hero h1 {
                 font-size: 1.5em;
             }
@@ -954,51 +962,46 @@
                 </li>
             </ul>
 
-           <!-- Phone Display (Center) -->
-<div class="phone-display">
-    <div class="phone-frame">
-        <div class="phone-screen">
-            <div class="screen-slide slide1 active" data-feature="0">
-                <img src="Screens\quote.png" alt="Browse & Discover">
-            </div>
+            <!-- Phone Display (Center) -->
+            <div class="phone-display">
+                <div class="phone-frame">
+                    <div class="phone-screen">
+                        <div class="screen-slide slide1 active" data-feature="0">
+                            <img src="Screens\quote.png" alt="Browse & Discover">
+                        </div>
 
-            <div class="screen-slide slide2" data-feature="1">
-                <img src="Screens\add bg.png" alt="Custom Backgrounds">
-            </div>
+                        <div class="screen-slide slide2" data-feature="1">
+                            <img src="Screens\add bg.png" alt="Custom Backgrounds">
+                        </div>
 
-            <div class="screen-slide slide3" data-feature="2">
-                <img src="Screens\community.png" alt="Social Community">
-            </div>
+                        <div class="screen-slide slide3" data-feature="2">
+                            <img src="Screens\community.png" alt="Social Community">
+                        </div>
 
-            <div class="screen-slide slide4" data-feature="3">
-                <img src="Screens\fav.png" alt="Save & Organize">
-            </div>
+                        <div class="screen-slide slide4" data-feature="3">
+                            <img src="Screens\fav.png" alt="Save & Organize">
+                        </div>
 
-            <div class="screen-slide slide5" data-feature="4">
-                <img src="Screens\quote.png" alt="Share Quotes">
-            </div>
+                        <div class="screen-slide slide5" data-feature="4">
+                            <img src="Screens\Sav_posts.png" alt="Share Quotes">
+                        </div>
 
-            <div class="screen-slide slide6" data-feature="5">
-                <img src="Screens\quote.png" alt="User Accounts">
-            </div>
+                        <div class="screen-slide slide6" data-feature="5">
+                            <img src="Screens\quote.png" alt="Notifications">
+                        </div>
+                    </div>
+                </div>
 
-            <div class="screen-slide slide7" data-feature="6">
-                <img src="Screens\quote.png" alt="Notifications">
+                <!-- Pagination Dots -->
+                <div class="screen-pagination">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                    <span class="dot" data-index="4"></span>
+                    <span class="dot" data-index="5"></span>
+                </div>
             </div>
-        </div>
-    </div>
-    
-    <!-- Pagination Dots -->
-    <div class="screen-pagination">
-        <span class="dot active" data-index="0"></span>
-        <span class="dot" data-index="1"></span>
-        <span class="dot" data-index="2"></span>
-        <span class="dot" data-index="3"></span>
-        <span class="dot" data-index="4"></span>
-        <span class="dot" data-index="5"></span>
-        <span class="dot" data-index="6"></span>
-    </div>
-</div>
             <!-- Right Features -->
             <ul class="features-list features-right">
                 <li class="feature-item" data-index="3">
@@ -1011,13 +1014,14 @@
 
                 <li class="feature-item" data-index="4">
                     <div class="feature-header">
-                        <div class="feature-title">Share Quotes</div>
+                        <div class="feature-title">Save Favorite Posts</div>
                     </div>
-                    <div class="feature-description">Share customized quote images via social media, messaging apps, or
-                        save to your device.</div>
+                    <div class="feature-description">
+                        Keep your favorite community posts saved in one place.
+                    </div>
                 </li>
 
-                <li class="feature-item" data-index="6">
+                <li class="feature-item" data-index="5">
                     <div class="feature-header">
                         <div class="feature-title">Smart Notifications</div>
                     </div>
@@ -1064,62 +1068,62 @@
     </footer>
 
     <script>
-       let currentFeature = 0;
-const totalFeatures = 7;
+        let currentFeature = 0;
+        const totalFeatures = 6;
 
-function switchFeature() {
-    // Remove active class from all
-    document.querySelectorAll('.feature-item').forEach(item => {
-        item.classList.remove('active');
-    });
-    document.querySelectorAll('.screen-slide').forEach(slide => {
-        slide.classList.remove('active');
-    });
-    document.querySelectorAll('.dot').forEach(dot => {
-        dot.classList.remove('active');
-    });
+        function switchFeature() {
+            // Remove active class from all
+            document.querySelectorAll('.feature-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            document.querySelectorAll('.screen-slide').forEach(slide => {
+                slide.classList.remove('active');
+            });
+            document.querySelectorAll('.dot').forEach(dot => {
+                dot.classList.remove('active');
+            });
 
-    // Move to next feature
-    currentFeature = (currentFeature + 1) % totalFeatures;
+            // Move to next feature
+            currentFeature = (currentFeature + 1) % totalFeatures;
 
-    // Add active class to current
-    document.querySelector(`.feature-item[data-index="${currentFeature}"]`).classList.add('active');
-    document.querySelector(`.screen-slide[data-feature="${currentFeature}"]`).classList.add('active');
-    document.querySelector(`.dot[data-index="${currentFeature}"]`).classList.add('active');
-}
+            // Add active class to current
+            document.querySelector(`.feature-item[data-index="${currentFeature}"]`).classList.add('active');
+            document.querySelector(`.screen-slide[data-feature="${currentFeature}"]`).classList.add('active');
+            document.querySelector(`.dot[data-index="${currentFeature}"]`).classList.add('active');
+        }
 
-// Auto-switch every 3 seconds
-setInterval(switchFeature, 3000);
+        // Auto-switch every 3 seconds
+        setInterval(switchFeature, 2000);
 
-// Manual click on feature items
-document.querySelectorAll('.feature-item').forEach(item => {
-    item.addEventListener('click', function() {
-        currentFeature = parseInt(this.dataset.index);
-        
-        document.querySelectorAll('.feature-item').forEach(i => i.classList.remove('active'));
-        document.querySelectorAll('.screen-slide').forEach(s => s.classList.remove('active'));
-        document.querySelectorAll('.dot').forEach(d => d.classList.remove('active'));
-        
-        this.classList.add('active');
-        document.querySelector(`.screen-slide[data-feature="${currentFeature}"]`).classList.add('active');
-        document.querySelector(`.dot[data-index="${currentFeature}"]`).classList.add('active');
-    });
-});
+        // Manual click on feature items
+        document.querySelectorAll('.feature-item').forEach(item => {
+            item.addEventListener('click', function () {
+                currentFeature = parseInt(this.dataset.index);
 
-// Click on dots to navigate
-document.querySelectorAll('.dot').forEach(dot => {
-    dot.addEventListener('click', function() {
-        currentFeature = parseInt(this.dataset.index);
-        
-        document.querySelectorAll('.feature-item').forEach(i => i.classList.remove('active'));
-        document.querySelectorAll('.screen-slide').forEach(s => s.classList.remove('active'));
-        document.querySelectorAll('.dot').forEach(d => d.classList.remove('active'));
-        
-        this.classList.add('active');
-        document.querySelector(`.feature-item[data-index="${currentFeature}"]`).classList.add('active');
-        document.querySelector(`.screen-slide[data-feature="${currentFeature}"]`).classList.add('active');
-    });
-});
+                document.querySelectorAll('.feature-item').forEach(i => i.classList.remove('active'));
+                document.querySelectorAll('.screen-slide').forEach(s => s.classList.remove('active'));
+                document.querySelectorAll('.dot').forEach(d => d.classList.remove('active'));
+
+                this.classList.add('active');
+                document.querySelector(`.screen-slide[data-feature="${currentFeature}"]`).classList.add('active');
+                document.querySelector(`.dot[data-index="${currentFeature}"]`).classList.add('active');
+            });
+        });
+
+        // Click on dots to navigate
+        document.querySelectorAll('.dot').forEach(dot => {
+            dot.addEventListener('click', function () {
+                currentFeature = parseInt(this.dataset.index);
+
+                document.querySelectorAll('.feature-item').forEach(i => i.classList.remove('active'));
+                document.querySelectorAll('.screen-slide').forEach(s => s.classList.remove('active'));
+                document.querySelectorAll('.dot').forEach(d => d.classList.remove('active'));
+
+                this.classList.add('active');
+                document.querySelector(`.feature-item[data-index="${currentFeature}"]`).classList.add('active');
+                document.querySelector(`.screen-slide[data-feature="${currentFeature}"]`).classList.add('active');
+            });
+        });
     </script>
     <script>
         const menuToggle = document.getElementById("menuToggle");
